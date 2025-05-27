@@ -3,9 +3,9 @@ from sklearn._loss import _loss
 import joblib
 import numpy as np
 
-model = joblib.load('model.joblib')
-df = joblib.load('df.joblib')
-preprocessor = joblib.load('preprocessor.joblib')
+model = joblib.load('model.joblib', mmap_mode=None)
+df = joblib.load('df.joblib', mmap_mode=None)
+preprocessor = joblib.load('preprocessor.joblib', mmap_mode=None)
 
 st.title('Laptop Price Wizard: SmartBuy at Your Service')
 
